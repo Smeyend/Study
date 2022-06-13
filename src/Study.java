@@ -14,13 +14,15 @@ public class Study {
             ResultSet resultSet = statement.executeQuery(query);
 
             while (resultSet.next()) {
-                int id = resultSet.getInt(1);
-                System.out.println(id);
+                User user = new User();
+                user.setId(resultSet.getInt("id"));
+                user.setAge(resultSet.getInt("age"));
+                user.setUser(resultSet.getString("name"));
+                user.setEmail(resultSet.getString("email"));
+                System.out.println(user);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
     }
 }

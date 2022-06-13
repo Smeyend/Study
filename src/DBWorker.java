@@ -9,7 +9,7 @@ public class DBWorker {
     private Connection connection;
 
     public DBWorker() {
-        try  {
+        try {
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
         } catch (SQLException e) {
             e.printStackTrace();
