@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class chosenGay {
+    //add a commit
     private final int attempts = 1000;
     private int numPerson;
     private int numDay;
