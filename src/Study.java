@@ -4,6 +4,7 @@ import java.sql.SQLException;
 
 public class Study {
 
+    //It's backupk
     private static final String URL = "jdbc:mysql://localhost:3306/mydbtest?useUnicode=true&useSSL=true&useJDBCCompliantTimezoneShift=true" +
             "&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private static final String USERNAME = "root";
